@@ -207,7 +207,7 @@ class App extends Component {
       <div className="App">
         <canvas id="canvas"></canvas>
         <button>Click Me</button>
-        <h1 class="text"> Happy New Year </h1>
+        <h1> Happy New Year </h1>
       </div>
     );
   }
