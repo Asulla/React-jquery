@@ -2,7 +2,7 @@
 
 body {
   background-color: black;
-  overflow-x: hidden;
+  overflow: hidden;
   text-align: center;
   position: relative;
 }
