@@ -1,2 +1,3 @@
 # React-jquery
-Created with CodeSandbox
+
+[Deploy] (https://csb-mcj4ys.netlify.app/)
