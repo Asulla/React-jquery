@@ -6,15 +6,16 @@ import "./styles.css";
 class App extends Component {
   componentDidMount() {
     $("button").click(function () {
-      $("h1").toggleClass("white");
+      $("h1").toggleClass("showText");
     });
+
+    // all jQuery bellow about fireworks only
     const PARTICLES_PER_FIREWORK = 150; // 100 - 400 or try 1000
     const FIREWORK_CHANCE = 0.02; // percentage, set to 0 and click instead
     const BASE_PARTICLE_SPEED = 0.6; // between 0-4, controls the size of the overall fireworks
     const FIREWORK_LIFESPAN = 600; // ms
     const PARTICLE_INITIAL_SPEED = 4.5; // 2-8
 
-    // not so fun options =\
     const GRAVITY = 9.8;
 
     const canvas = document.getElementById("canvas");
@@ -185,8 +186,7 @@ class App extends Component {
       canvas.height = window.innerHeight;
     };
 
-    // run it!
-
+    // run it
     updateCanvasSize();
     $(window).resize(updateCanvasSize);
     $(canvas).on("click", (e) => {
@@ -206,8 +206,9 @@ class App extends Component {
     return (
       <div className="App">
         <canvas id="canvas"></canvas>
+
         <button>Click Me</button>
-        <h1> Happy New Year </h1>
+        <h1>Happy New Year</h1>
       </div>
     );
   }
